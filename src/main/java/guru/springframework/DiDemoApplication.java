@@ -5,6 +5,7 @@ import guru.springframework.controllers.GetterInjectedController;
 import guru.springframework.controllers.MyController;
 import guru.springframework.controllers.PropertyInjectedController;
 import guru.springframework.examplebeans.ApplicationDataSource;
+import guru.springframework.examplebeans.ApplicationYAMLDataSource;
 import guru.springframework.examplebeans.FakeDataSource;
 import guru.springframework.examplebeans.FakeJmsBroker;
 import org.springframework.boot.SpringApplication;
@@ -27,6 +28,9 @@ public class DiDemoApplication {
 
 		ApplicationDataSource applicationDataSource = ctx.getBean(ApplicationDataSource.class);
 		System.out.println(applicationDataSource.toString());
+
+		ApplicationYAMLDataSource applicationYAMLDataSource = ctx.getBean(ApplicationYAMLDataSource.class);
+		System.out.println(applicationYAMLDataSource.toString());
 
 	}
 }

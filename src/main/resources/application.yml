@@ -1,0 +1,5 @@
+com:
+  orionsson:
+    username: yml db user
+    password: yml db password
+    url: yml db url
