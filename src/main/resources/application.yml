@@ -3,3 +3,10 @@ com:
     username: yml db user
     password: yml db password
     url: yml db url
+---
+spring:
+  profiles:
+    active: de
+com:
+  orionsson:
+    username: yml db user for german
